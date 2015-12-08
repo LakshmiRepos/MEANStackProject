@@ -1,0 +1,5 @@
+{"_id":{"$oid":"55dd4a8f48d163fa63cbb0f9"},"id":10001.0,"name":"TV","price":20000.0}
+{"_id":{"$oid":"55dd4a9e48d163fa63cbb0fa"},"id":10002.0,"name":"FRIDGE","price":8000.0}
+{"_id":{"$oid":"55dd4ab048d163fa63cbb0fb"},"id":10003.0,"name":"WASHING MACHINE","price":12000.0}
+{"_id":{"$oid":"55dd4ac148d163fa63cbb0fc"},"id":10004.0,"name":"IRON BOX","price":400.0}
+{"_id":{"$oid":"55dd4ad248d163fa63cbb0fd"},"id":10005.0,"name":"LAPTOP","price":44500.0}

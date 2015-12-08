@@ -1,0 +1,29 @@
+<nav class="navbar navbar-default shopping_header">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">Shopping Cart</a>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/home/products/{{hist.userID}}">Products</a></li>
+        <li><a href="#/home/checkout/{{hist.userID}}">Checkout</a></li>
+        <li class="active"><a href="#/home/history/{{hist.userID}}">History</a></li>
+        <li><a href="#/signout">Sign out</a></li>
+      </ul>
+    </div>
+</nav>
+
+<div class="container products">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Date</th>
+      </thead>
+      <tr ng-repeat="prd in hist.checkedOutProducts track by $index">
+        <td>{{prd.name}}</td>
+        <td>{{prd.price}}</td>
+        <td>{{prd.date}}</td>
+      </tr>
+    </table>
+  </div>  
+</div>
+

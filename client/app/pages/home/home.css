@@ -1,0 +1,18 @@
+.prod_lst{
+  padding: 12px;
+  border: 1px solid #b3b3b3;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+.prod_lst .prd_name{
+  margin : 3px;
+  font-size : 18px;
+  font-weight: bold;
+}
+.prod_lst .price{
+  margin : 3px;
+  font-size : 14px;
+}
+.prod_lst .btn {
+  margin : 10px 0;
+}

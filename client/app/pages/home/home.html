@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default shopping_header">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">Shopping Cart</a>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#/home/products/{{hc.userID}}">Products</a></li>
+        <li><a href="#/home/checkout/{{hc.userID}}">Checkout</a></li>
+        <li><a href="#/home/history/{{hc.userID}}">History</a></li>
+        <li><a href="#/signout">Sign out</a></li>
+      </ul>
+    </div>
+</nav>
+
+<div class="container products">
+  <div class="row">
+    <div class="col-md-3" ng-repeat="prd in hc.products track by $index">
+      <div class="prod_lst">
+        <h2 class="prd_name">
+          {{prd.name}}
+        </h2>
+        <h5 class="price">{{prd.price}}</h5>
+        <button class="btn btn-primary" ng-click="hc.addToCart(prd)">
+          ADD TO CART
+        </button>  
+      </div>      
+    </div>
+  </div>  
+</div>
+
